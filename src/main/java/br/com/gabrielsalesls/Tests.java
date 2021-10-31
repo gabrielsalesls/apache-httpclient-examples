@@ -13,12 +13,10 @@ public class Tests {
 
     static final Logger logger = LoggerFactory.getLogger(Tests.class);
 
-
     public static void main(String[] args) throws NoSuchAlgorithmException, KeyStoreException, KeyManagementException, IOException {
 
         HttpClientConfig httpClientConfig = new HttpClientConfig();
         CloseableHttpClient httpClient = httpClientConfig.getClient();
-
         Requests requests = new Requests(httpClient);
 
         String url = "https://httpbin.org/get?element=1";
