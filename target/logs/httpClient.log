@@ -1,0 +1,287 @@
+2021-10-31 17:40:28 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-10-31 17:40:28 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-10-31 17:40:28 DEBUG PoolingHttpClientConnectionManager:267 - Connection request: [route: {s}->https://httpbin.org:443][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2021-10-31 17:40:28 DEBUG PoolingHttpClientConnectionManager:312 - Connection leased: [id: 0][route: {s}->https://httpbin.org:443][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-10-31 17:40:28 DEBUG MainClientExec:234 - Opening connection {s}->https://httpbin.org:443
+2021-10-31 17:40:28 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to httpbin.org/54.156.165.4:443
+2021-10-31 17:40:28 DEBUG SSLConnectionSocketFactory:366 - Connecting socket to httpbin.org/54.156.165.4:443 with timeout 0
+2021-10-31 17:40:29 DEBUG SSLConnectionSocketFactory:430 - Enabled protocols: [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+2021-10-31 17:40:29 DEBUG SSLConnectionSocketFactory:431 - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2021-10-31 17:40:29 DEBUG SSLConnectionSocketFactory:435 - Starting handshake
+2021-10-31 17:40:29 DEBUG SSLConnectionSocketFactory:465 - Secure session established
+2021-10-31 17:40:29 DEBUG SSLConnectionSocketFactory:466 -  negotiated protocol: TLSv1.2
+2021-10-31 17:40:29 DEBUG SSLConnectionSocketFactory:467 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2021-10-31 17:40:29 DEBUG SSLConnectionSocketFactory:475 -  peer principal: CN=httpbin.org
+2021-10-31 17:40:29 DEBUG SSLConnectionSocketFactory:484 -  peer alternative names: [httpbin.org, *.httpbin.org]
+2021-10-31 17:40:29 DEBUG SSLConnectionSocketFactory:488 -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2021-10-31 17:40:29 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.0.146:49269<->54.156.165.4:443
+2021-10-31 17:40:29 DEBUG MainClientExec:255 - Executing request GET /get?argumento=1 HTTP/1.1
+2021-10-31 17:40:29 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2021-10-31 17:40:29 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2021-10-31 17:40:29 DEBUG headers:133 - http-outgoing-0 >> GET /get?argumento=1 HTTP/1.1
+2021-10-31 17:40:29 DEBUG headers:136 - http-outgoing-0 >> custom-key: sales
+2021-10-31 17:40:29 DEBUG headers:136 - http-outgoing-0 >> User-Agent: GoogleBot
+2021-10-31 17:40:29 DEBUG headers:136 - http-outgoing-0 >> Host: httpbin.org
+2021-10-31 17:40:29 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2021-10-31 17:40:29 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 >> "GET /get?argumento=1 HTTP/1.1[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 >> "custom-key: sales[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: GoogleBot[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "Date: Sun, 31 Oct 2021 20:40:30 GMT[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 337[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-10-31 17:40:29 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2021-10-31 17:40:29 DEBUG headers:125 - http-outgoing-0 << Date: Sun, 31 Oct 2021 20:40:30 GMT
+2021-10-31 17:40:29 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+2021-10-31 17:40:29 DEBUG headers:125 - http-outgoing-0 << Content-Length: 337
+2021-10-31 17:40:29 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2021-10-31 17:40:29 DEBUG headers:125 - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-10-31 17:40:29 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-10-31 17:40:29 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-10-31 17:40:29 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "{[\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "  "args": {[\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "    "argumento": "1"[\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "  }, [\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "  "headers": {[\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "    "Accept-Encoding": "gzip,deflate", [\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "    "Custom-Key": "sales", [\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "    "Host": "httpbin.org", [\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "    "User-Agent": "GoogleBot", [\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "    "X-Amzn-Trace-Id": "Root=1-617eff3e-6192c1be2af59bac4e1fac1f"[\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "  }, [\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "  "origin": "191.183.100.103", [\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "  "url": "https://httpbin.org/get?argumento=1"[\n]"
+2021-10-31 17:40:29 DEBUG wire:73 - http-outgoing-0 << "}[\n]"
+2021-10-31 17:40:29 DEBUG PoolingHttpClientConnectionManager:344 - Connection [id: 0][route: {s}->https://httpbin.org:443] can be kept alive indefinitely
+2021-10-31 17:40:29 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-10-31 17:40:29 DEBUG PoolingHttpClientConnectionManager:351 - Connection released: [id: 0][route: {s}->https://httpbin.org:443][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-10-31 17:40:29 INFO  Testes:44 - {"argumento":"1"}
+2021-10-31 17:40:29 DEBUG PoolingHttpClientConnectionManager:411 - Connection manager is shutting down
+2021-10-31 17:40:29 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2021-10-31 17:40:29 DEBUG PoolingHttpClientConnectionManager:434 - Connection manager shut down
+2021-10-31 17:40:42 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-10-31 17:40:42 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-10-31 17:40:42 DEBUG PoolingHttpClientConnectionManager:267 - Connection request: [route: {s}->https://httpbin.org:443][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2021-10-31 17:40:42 DEBUG PoolingHttpClientConnectionManager:312 - Connection leased: [id: 0][route: {s}->https://httpbin.org:443][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-10-31 17:40:42 DEBUG MainClientExec:234 - Opening connection {s}->https://httpbin.org:443
+2021-10-31 17:40:42 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to httpbin.org/54.156.165.4:443
+2021-10-31 17:40:42 DEBUG SSLConnectionSocketFactory:366 - Connecting socket to httpbin.org/54.156.165.4:443 with timeout 0
+2021-10-31 17:40:42 DEBUG SSLConnectionSocketFactory:430 - Enabled protocols: [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+2021-10-31 17:40:42 DEBUG SSLConnectionSocketFactory:431 - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2021-10-31 17:40:42 DEBUG SSLConnectionSocketFactory:435 - Starting handshake
+2021-10-31 17:40:43 DEBUG SSLConnectionSocketFactory:465 - Secure session established
+2021-10-31 17:40:43 DEBUG SSLConnectionSocketFactory:466 -  negotiated protocol: TLSv1.2
+2021-10-31 17:40:43 DEBUG SSLConnectionSocketFactory:467 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2021-10-31 17:40:43 DEBUG SSLConnectionSocketFactory:475 -  peer principal: CN=httpbin.org
+2021-10-31 17:40:43 DEBUG SSLConnectionSocketFactory:484 -  peer alternative names: [httpbin.org, *.httpbin.org]
+2021-10-31 17:40:43 DEBUG SSLConnectionSocketFactory:488 -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2021-10-31 17:40:43 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.0.146:49275<->54.156.165.4:443
+2021-10-31 17:40:43 DEBUG MainClientExec:255 - Executing request GET /get?argumento=1 HTTP/1.1
+2021-10-31 17:40:43 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2021-10-31 17:40:43 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2021-10-31 17:40:43 DEBUG headers:133 - http-outgoing-0 >> GET /get?argumento=1 HTTP/1.1
+2021-10-31 17:40:43 DEBUG headers:136 - http-outgoing-0 >> custom-key: sales
+2021-10-31 17:40:43 DEBUG headers:136 - http-outgoing-0 >> User-Agent: GoogleBot
+2021-10-31 17:40:43 DEBUG headers:136 - http-outgoing-0 >> Host: httpbin.org
+2021-10-31 17:40:43 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2021-10-31 17:40:43 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 >> "GET /get?argumento=1 HTTP/1.1[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 >> "custom-key: sales[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: GoogleBot[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "Date: Sun, 31 Oct 2021 20:40:44 GMT[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 337[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "{[\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "  "args": {[\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "    "argumento": "1"[\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "  }, [\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "  "headers": {[\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "    "Accept-Encoding": "gzip,deflate", [\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "    "Custom-Key": "sales", [\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "    "Host": "httpbin.org", [\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "    "User-Agent": "GoogleBot", [\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "    "X-Amzn-Trace-Id": "Root=1-617eff4c-6e0a5fb23c7071d414d35f6f"[\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "  }, [\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "  "origin": "191.183.100.103", [\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "  "url": "https://httpbin.org/get?argumento=1"[\n]"
+2021-10-31 17:40:43 DEBUG wire:73 - http-outgoing-0 << "}[\n]"
+2021-10-31 17:40:43 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2021-10-31 17:40:43 DEBUG headers:125 - http-outgoing-0 << Date: Sun, 31 Oct 2021 20:40:44 GMT
+2021-10-31 17:40:43 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+2021-10-31 17:40:43 DEBUG headers:125 - http-outgoing-0 << Content-Length: 337
+2021-10-31 17:40:43 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2021-10-31 17:40:43 DEBUG headers:125 - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-10-31 17:40:43 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-10-31 17:40:43 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-10-31 17:40:43 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-10-31 17:40:43 DEBUG PoolingHttpClientConnectionManager:344 - Connection [id: 0][route: {s}->https://httpbin.org:443] can be kept alive indefinitely
+2021-10-31 17:40:43 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-10-31 17:40:43 DEBUG PoolingHttpClientConnectionManager:351 - Connection released: [id: 0][route: {s}->https://httpbin.org:443][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-10-31 17:40:43 INFO  Testes:43 - {"argumento":"1"}
+2021-10-31 17:40:43 DEBUG PoolingHttpClientConnectionManager:411 - Connection manager is shutting down
+2021-10-31 17:40:43 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2021-10-31 17:40:43 DEBUG PoolingHttpClientConnectionManager:434 - Connection manager shut down
+2021-10-31 17:41:03 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-10-31 17:41:03 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-10-31 17:41:03 DEBUG PoolingHttpClientConnectionManager:267 - Connection request: [route: {s}->https://httpbin.org:443][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2021-10-31 17:41:03 DEBUG PoolingHttpClientConnectionManager:312 - Connection leased: [id: 0][route: {s}->https://httpbin.org:443][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-10-31 17:41:03 DEBUG MainClientExec:234 - Opening connection {s}->https://httpbin.org:443
+2021-10-31 17:41:03 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to httpbin.org/54.156.165.4:443
+2021-10-31 17:41:03 DEBUG SSLConnectionSocketFactory:366 - Connecting socket to httpbin.org/54.156.165.4:443 with timeout 0
+2021-10-31 17:41:03 DEBUG SSLConnectionSocketFactory:430 - Enabled protocols: [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+2021-10-31 17:41:03 DEBUG SSLConnectionSocketFactory:431 - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2021-10-31 17:41:03 DEBUG SSLConnectionSocketFactory:435 - Starting handshake
+2021-10-31 17:41:04 DEBUG SSLConnectionSocketFactory:465 - Secure session established
+2021-10-31 17:41:04 DEBUG SSLConnectionSocketFactory:466 -  negotiated protocol: TLSv1.2
+2021-10-31 17:41:04 DEBUG SSLConnectionSocketFactory:467 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2021-10-31 17:41:04 DEBUG SSLConnectionSocketFactory:475 -  peer principal: CN=httpbin.org
+2021-10-31 17:41:04 DEBUG SSLConnectionSocketFactory:484 -  peer alternative names: [httpbin.org, *.httpbin.org]
+2021-10-31 17:41:04 DEBUG SSLConnectionSocketFactory:488 -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2021-10-31 17:41:04 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.0.146:49334<->54.156.165.4:443
+2021-10-31 17:41:04 DEBUG MainClientExec:255 - Executing request GET /get?argumento=1 HTTP/1.1
+2021-10-31 17:41:04 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2021-10-31 17:41:04 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2021-10-31 17:41:04 DEBUG headers:133 - http-outgoing-0 >> GET /get?argumento=1 HTTP/1.1
+2021-10-31 17:41:04 DEBUG headers:136 - http-outgoing-0 >> custom-key: sales
+2021-10-31 17:41:04 DEBUG headers:136 - http-outgoing-0 >> User-Agent: GoogleBot
+2021-10-31 17:41:04 DEBUG headers:136 - http-outgoing-0 >> Host: httpbin.org
+2021-10-31 17:41:04 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2021-10-31 17:41:04 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 >> "GET /get?argumento=1 HTTP/1.1[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 >> "custom-key: sales[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: GoogleBot[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "Date: Sun, 31 Oct 2021 20:41:05 GMT[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 337[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "{[\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "  "args": {[\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "    "argumento": "1"[\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "  }, [\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "  "headers": {[\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "    "Accept-Encoding": "gzip,deflate", [\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "    "Custom-Key": "sales", [\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "    "Host": "httpbin.org", [\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "    "User-Agent": "GoogleBot", [\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "    "X-Amzn-Trace-Id": "Root=1-617eff61-4c5652222a3083bd3c82b1f4"[\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "  }, [\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "  "origin": "191.183.100.103", [\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "  "url": "https://httpbin.org/get?argumento=1"[\n]"
+2021-10-31 17:41:04 DEBUG wire:73 - http-outgoing-0 << "}[\n]"
+2021-10-31 17:41:04 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2021-10-31 17:41:04 DEBUG headers:125 - http-outgoing-0 << Date: Sun, 31 Oct 2021 20:41:05 GMT
+2021-10-31 17:41:04 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+2021-10-31 17:41:04 DEBUG headers:125 - http-outgoing-0 << Content-Length: 337
+2021-10-31 17:41:04 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2021-10-31 17:41:04 DEBUG headers:125 - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-10-31 17:41:04 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-10-31 17:41:04 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-10-31 17:41:04 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-10-31 17:41:04 DEBUG PoolingHttpClientConnectionManager:344 - Connection [id: 0][route: {s}->https://httpbin.org:443] can be kept alive indefinitely
+2021-10-31 17:41:04 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-10-31 17:41:04 DEBUG PoolingHttpClientConnectionManager:351 - Connection released: [id: 0][route: {s}->https://httpbin.org:443][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-10-31 17:41:04 INFO  Testes:43 - {"argumento":"1"}
+2021-10-31 17:41:04 DEBUG PoolingHttpClientConnectionManager:411 - Connection manager is shutting down
+2021-10-31 17:41:04 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2021-10-31 17:41:04 DEBUG PoolingHttpClientConnectionManager:434 - Connection manager shut down
+2021-10-31 17:44:29 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-10-31 17:44:29 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-10-31 17:44:29 DEBUG PoolingHttpClientConnectionManager:267 - Connection request: [route: {s}->https://httpbin.org:443][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2021-10-31 17:44:29 DEBUG PoolingHttpClientConnectionManager:312 - Connection leased: [id: 0][route: {s}->https://httpbin.org:443][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-10-31 17:44:29 DEBUG MainClientExec:234 - Opening connection {s}->https://httpbin.org:443
+2021-10-31 17:44:29 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to httpbin.org/18.232.227.86:443
+2021-10-31 17:44:29 DEBUG SSLConnectionSocketFactory:366 - Connecting socket to httpbin.org/18.232.227.86:443 with timeout 0
+2021-10-31 17:44:29 DEBUG SSLConnectionSocketFactory:430 - Enabled protocols: [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+2021-10-31 17:44:29 DEBUG SSLConnectionSocketFactory:431 - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2021-10-31 17:44:29 DEBUG SSLConnectionSocketFactory:435 - Starting handshake
+2021-10-31 17:44:30 DEBUG SSLConnectionSocketFactory:465 - Secure session established
+2021-10-31 17:44:30 DEBUG SSLConnectionSocketFactory:466 -  negotiated protocol: TLSv1.2
+2021-10-31 17:44:30 DEBUG SSLConnectionSocketFactory:467 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2021-10-31 17:44:30 DEBUG SSLConnectionSocketFactory:475 -  peer principal: CN=httpbin.org
+2021-10-31 17:44:30 DEBUG SSLConnectionSocketFactory:484 -  peer alternative names: [httpbin.org, *.httpbin.org]
+2021-10-31 17:44:30 DEBUG SSLConnectionSocketFactory:488 -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2021-10-31 17:44:30 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.0.146:51642<->18.232.227.86:443
+2021-10-31 17:44:30 DEBUG MainClientExec:255 - Executing request GET /get?argumento=1 HTTP/1.1
+2021-10-31 17:44:30 DEBUG MainClientExec:260 - Target auth state: UNCHALLENGED
+2021-10-31 17:44:30 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2021-10-31 17:44:30 DEBUG headers:133 - http-outgoing-0 >> GET /get?argumento=1 HTTP/1.1
+2021-10-31 17:44:30 DEBUG headers:136 - http-outgoing-0 >> custom-key: sales
+2021-10-31 17:44:30 DEBUG headers:136 - http-outgoing-0 >> User-Agent: GoogleBot
+2021-10-31 17:44:30 DEBUG headers:136 - http-outgoing-0 >> Host: httpbin.org
+2021-10-31 17:44:30 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2021-10-31 17:44:30 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 >> "GET /get?argumento=1 HTTP/1.1[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 >> "custom-key: sales[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: GoogleBot[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "Date: Sun, 31 Oct 2021 20:44:31 GMT[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 337[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-10-31 17:44:30 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2021-10-31 17:44:30 DEBUG headers:125 - http-outgoing-0 << Date: Sun, 31 Oct 2021 20:44:31 GMT
+2021-10-31 17:44:30 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+2021-10-31 17:44:30 DEBUG headers:125 - http-outgoing-0 << Content-Length: 337
+2021-10-31 17:44:30 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2021-10-31 17:44:30 DEBUG headers:125 - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-10-31 17:44:30 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-10-31 17:44:30 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-10-31 17:44:30 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "{[\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "  "args": {[\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "    "argumento": "1"[\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "  }, [\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "  "headers": {[\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "    "Accept-Encoding": "gzip,deflate", [\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "    "Custom-Key": "sales", [\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "    "Host": "httpbin.org", [\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "    "User-Agent": "GoogleBot", [\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "    "X-Amzn-Trace-Id": "Root=1-617f002f-77392f495e744d071507490a"[\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "  }, [\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "  "origin": "191.183.100.103", [\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "  "url": "https://httpbin.org/get?argumento=1"[\n]"
+2021-10-31 17:44:30 DEBUG wire:73 - http-outgoing-0 << "}[\n]"
+2021-10-31 17:44:30 DEBUG PoolingHttpClientConnectionManager:344 - Connection [id: 0][route: {s}->https://httpbin.org:443] can be kept alive indefinitely
+2021-10-31 17:44:30 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-10-31 17:44:30 DEBUG PoolingHttpClientConnectionManager:351 - Connection released: [id: 0][route: {s}->https://httpbin.org:443][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-10-31 17:44:30 DEBUG PoolingHttpClientConnectionManager:411 - Connection manager is shutting down
+2021-10-31 17:44:30 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2021-10-31 17:44:30 DEBUG PoolingHttpClientConnectionManager:434 - Connection manager shut down
