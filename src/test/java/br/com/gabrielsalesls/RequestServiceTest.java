@@ -14,7 +14,7 @@ import java.security.NoSuchAlgorithmException;
 
 import static java.util.Objects.requireNonNull;
 
-class RequestsTest {
+class RequestServiceTest {
 
     private static String VALID_RESPONSE;
     public MockWebServer mockWebServer;
@@ -39,13 +39,39 @@ class RequestsTest {
 
         HttpClientConfig httpClientConfig = new HttpClientConfig();
         CloseableHttpClient httpClient = httpClientConfig.getClient();
-        Requests requests = new Requests(httpClient);
+        RequestService requestService = new RequestService(httpClient);
 
         String url = "https://httpbin.org/get?element=1";
         String customKey = "custom-key";
 
-        String element = requests.getId(mockWebServer.url("/").toString(), customKey);
+        String element = requestService.getRequest(mockWebServer.url("/").toString(), customKey);
 
-        Assertions.assertEquals("1", element);
+        Assertions.assertNotEquals(null, element);
     }
+
+    @Test
+    void testPostId() throws NoSuchAlgorithmException, KeyStoreException, KeyManagementException, IOException {
+
+        String body = "{\n" +
+                "    \"args\": {\n" +
+                "        \"element\": \"1\"\n" +
+                "    }\n" +
+                "}";
+
+        mockWebServer.enqueue(new MockResponse()
+                .setBody(body)
+                .addHeader("Content-Type", "application/json"));
+
+        HttpClientConfig httpClientConfig = new HttpClientConfig();
+        CloseableHttpClient httpClient = httpClientConfig.getClient();
+        RequestService requestService = new RequestService(httpClient);
+
+        String url = "https://httpbin.org/get?element=1";
+        String customKey = "custom-key";
+
+        String element = requestService.postRequest(mockWebServer.url("/").toString(), body, "1");
+
+        Assertions.assertNotEquals(null, element);
+    }
+
 }
